@@ -7,10 +7,10 @@ class Asimeow < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/mdnmdn/asimeow/releases/download/v0.1.7/asimeow-aarch64-apple-darwin.zip"
-      sha256 "cf3a88629aa0d8bcdd322ec4f1c5ded26c28f91693af403f0beee2c5a9f0629e"
+      sha256 "1130fc3b0cbc6ca80a5c58dac54e57e6897f6d124f40906d6a586b26f97398c8"
     else
       url "https://github.com/mdnmdn/asimeow/releases/download/v0.1.7/asimeow-x86_64-apple-darwin.zip"
-      sha256 "eda2889c1287c59fe540694502f595d6f1ab4b0b4fe1d46214ac0926b6706a1d"
+      sha256 "610c774321460c3d131a51c37c86ffcfdbced4277e0531159793871071116f04"
     end
   end
 

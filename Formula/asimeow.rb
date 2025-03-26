@@ -21,8 +21,8 @@ class Asimeow < Formula
 
   service do
     run [opt_bin/"asimeow"]
-    run_type :cron
-    cron "10,20,30,40,50,43 * * * *"
+    run_type :interval
+    interval 21600 # 6 hours in seconds (6 * 60 * 60)
     log_path var/"log/asimeow.log"
     error_log_path var/"log/asimeow.log"
     working_dir HOMEBREW_PREFIX

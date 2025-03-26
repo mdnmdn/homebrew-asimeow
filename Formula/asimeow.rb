@@ -22,7 +22,7 @@ class Asimeow < Formula
   service do
     run [opt_bin/"asimeow"]
     run_type :cron
-    cron "11 23 * * *"
+    cron "*/5 * * * *"
     log_path var/"log/asimeow.log"
     error_log_path var/"log/asimeow.log"
     working_dir HOMEBREW_PREFIX

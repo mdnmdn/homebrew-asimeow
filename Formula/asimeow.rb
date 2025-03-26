@@ -2,7 +2,7 @@ class Asimeow < Formula
   desc "A tool for managing macOS Time Machine exclusions for developer projects"
   homepage "https://github.com/mdnmdn/asimeow"
   version "0.1.9"
-  license "MIT"  # Replace with your actual license
+  license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
@@ -17,6 +17,15 @@ class Asimeow < Formula
   def install
     bin.install "asimeow"
     # Add any other files you want to install
+  end
+
+  service do
+    run [opt_bin/"asimeow"]
+    run_type :cron
+    cron "11 23 * * *"
+    log_path var/"log/asimeow.log"
+    error_log_path var/"log/asimeow.log"
+    working_dir HOMEBREW_PREFIX
   end
 
   test do

@@ -1,16 +1,16 @@
 class Asimeow < Formula
   desc "A tool for managing macOS Time Machine exclusions for developer projects"
   homepage "https://github.com/mdnmdn/asimeow"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"  # Replace with your actual license
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/mdnmdn/asimeow/releases/download/v0.2.0/asimeow-aarch64-apple-darwin.zip"
-      sha256 "a5ea2a8fd53f099ee984dee5f53e14c6f046811a3950d3fade0485607c0fa5d4"
+      url "https://github.com/mdnmdn/asimeow/releases/download/v0.2.1/asimeow-aarch64-apple-darwin.zip"
+      sha256 "38ccd35f44d3c8e9aeef629ec3c8584e988a978db9b14bec07e2f1676932bca5"
     else
-      url "https://github.com/mdnmdn/asimeow/releases/download/v0.2.0/asimeow-x86_64-apple-darwin.zip"
-      sha256 "21273a826bcc6c1bb09e14754d529cb387fecd2f54d882211750a64f37ada8ae"
+      url "https://github.com/mdnmdn/asimeow/releases/download/v0.2.1/asimeow-x86_64-apple-darwin.zip"
+      sha256 "5ea867152b2374c7a6bc7fc8d65c3bb6c009dfb612fad0d219baf8e80ef6a367"
     end
   end
 
